@@ -1,0 +1,85 @@
+/* Remove default margin and padding from the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    width: 100%; /* Make header full width */
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for content inside the header */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Align items vertically in the center */
+    box-sizing: border-box; /* Include padding in width and height calculations */
+    position: fixed; /* Fix header at the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+.header-container {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Ensure full width */
+    justify-content: space-between; /* Distribute space between elements */
+    max-width: 1200px; /* Optional: Maximum width for header content */
+    margin: 0 auto; /* Center the content */
+}
+
+.logo {
+    font-size: 1.5rem; /* Larger font size for the logo */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Logo text color */
+    margin-right: 20px; /* Space between logo and nav links */
+}
+
+.nav-links {
+    display: flex; /* Flexbox for navigation links */
+    align-items: center; /* Align items vertically */
+    gap: 1rem; /* Space between navigation links */
+}
+
+.nav-link {
+    color: white; /* Navigation link text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 12px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners for links */
+}
+
+.nav-link:hover {
+    background-color: #555; /* Hover effect background color */
+}
+
+/* Search Bar Styles */
+.search-form {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Align items vertically */
+    margin-left: auto; /* Push search bar to the right */
+}
+
+.search-input {
+    padding: 8px; /* Padding for input */
+    border: none; /* Remove border */
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left */
+    outline: none; /* Remove outline */
+}
+
+.search-button {
+    padding: 8px 12px; /* Padding for button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Hover color for button */
+}
+
